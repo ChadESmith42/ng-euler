@@ -1,0 +1,21 @@
+<section>
+  <h2>Problem #2: Even Fibonacci Numbers</h2>
+  <article>
+    <p class="description" *ngFor="let d of description">
+      {{ d }}
+    </p>
+  </article>
+  <article>
+    <div>
+      <span *ngFor="let f of fibonacciSequence; last as last">
+        {{ f | number }}
+        <span *ngIf="!last">, </span>
+        <span *ngIf="last">.</span>
+      </span>
+    </div>
+    <p>
+      The sum of the {{ fibonacciSequence.length | number }} even Fibonacci
+      sequence values, less than 4,000,000 is {{ total | number }}
+    </p>
+  </article>
+</section>
