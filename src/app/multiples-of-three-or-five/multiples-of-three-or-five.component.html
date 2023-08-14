@@ -1,0 +1,27 @@
+<section>
+  <h2>Archive Problem #1: Multiples of 3 or 5</h2>
+  <article>
+    <p class="description" *ngFor="let d of description">{{ d }}</p>
+  </article>
+  <article>
+    <mat-accordion>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Multiples of 3 or 5 for 1 through 1,000.
+          </mat-panel-title>
+          <mat-panel-description>
+            Click here to see the full list of all {{ multiples.length }} values.
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="multiples">
+          <span class="multiple" *ngFor="let m of multiples">{{ m }}</span>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <p>
+      The total of the multiples is:
+      <span class="answer">{{ total | number }}</span>
+    </p>
+  </article>
+</section>

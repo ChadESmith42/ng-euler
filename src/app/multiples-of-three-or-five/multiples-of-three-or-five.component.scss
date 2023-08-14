@@ -1,0 +1,12 @@
+.multiples {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.multiple {
+  font-size: 0.75rem;
+  flex: 0 1 auto;
+  padding: 1rem;
+}
